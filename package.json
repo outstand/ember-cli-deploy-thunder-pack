@@ -1,0 +1,33 @@
+{
+  "name": "ember-cli-deploy-thunder-pack",
+  "version": "0.1.0",
+  "description": "A pack of ember-cli-deploy plugins for implementing the 'lightning' deploys approach against S3/Cloudfront.",
+  "scripts": {},
+  "repository": "https://github.com/outstand/ember-cli-deploy-thunder-pack",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "author": "Ryan Schlesinger",
+  "license": "MIT",
+  "devDependencies": {
+    "ember-cli": "2.9.1",
+    "ember-cli-release": "1.0.0-beta.2"
+  },
+  "keywords": [
+    "ember-addon",
+    "ember-cli-deploy-plugin-pack"
+  ],
+  "dependencies": {
+    "ember-cli-deploy-build": "0.1.1",
+    "ember-cli-deploy-display-revisions": "0.2.2",
+    "ember-cli-deploy-gzip": "0.2.4",
+    "ember-cli-deploy-s3": "0.4.0",
+    "ember-cli-deploy-s3-index": "0.5.0",
+    "ember-cli-deploy-cloudfront": "0.2.8",
+    "ember-cli-deploy-manifest": "0.1.1",
+    "ember-cli-deploy-revision-data": "0.3.2"
+  },
+  "ember-addon": {
+    "defaultBlueprint": "thunder-deploy-config"
+  }
+}
