@@ -8,7 +8,7 @@ module.exports = function(deployTarget) {
     build: {},
     cloudfront: {},
     s3: {},
-    s3-index: {}
+    's3-index': {}
   };
   if (VALID_DEPLOY_TARGETS.indexOf(deployTarget) === -1) {
     throw new Error('Invalid deployTarget ' + deployTarget);
@@ -16,7 +16,11 @@ module.exports = function(deployTarget) {
 
   if (deployTarget === 'development') {
     ENV.build.environment = 'development';
-    ENV.plugins = ['build'];
+    ENV.pipeline = {
+      disabled: {
+        allExcept: ['build']
+      }
+    };
   }
 
   if (deployTarget === 'production') {
@@ -34,10 +38,10 @@ module.exports = function(deployTarget) {
     ENV.s3.region = /* YOUR S3 REGION */;
 
     // Uncomment these if not using IAM profiles.
-    // ENV.s3-index.accessKeyId = process.env.AWS_KEY;
-    // ENV.s3-index.secretAccessKey = process.env.AWS_SECRET;
-    ENV.s3-index.bucket = /* YOUR S3 BUCKET NAME */;
-    ENV.s3-index.region = /* YOUR S3 REGION */;
+    // ENV['s3-index'].accessKeyId = process.env.AWS_KEY;
+    // ENV['s3-index'].secretAccessKey = process.env.AWS_SECRET;
+    ENV['s3-index'].bucket = /* YOUR S3 BUCKET NAME */;
+    ENV['s3-index'].region = /* YOUR S3 REGION */;
   }
 
   return ENV;
