@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-deploy-thunder-pack",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A pack of ember-cli-deploy plugins for implementing the 'lightning' deploys approach against S3/Cloudfront.",
   "scripts": {},
   "repository": "https://github.com/outstand/ember-cli-deploy-thunder-pack",
