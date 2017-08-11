@@ -19,12 +19,12 @@
   ],
   "dependencies": {
     "ember-cli-deploy-build": "^1.1.0",
-    "ember-cli-deploy-cloudfront": "1.1.0",
+    "ember-cli-deploy-cloudfront": "1.2.0",
     "ember-cli-deploy-display-revisions": "1.0.0",
     "ember-cli-deploy-gzip": "1.0.0",
     "ember-cli-deploy-manifest": "1.0.0",
     "ember-cli-deploy-revision-data": "1.0.0",
-    "ember-cli-deploy-s3": "1.0.0",
+    "ember-cli-deploy-s3": "1.1.0",
     "ember-cli-deploy-s3-index": "1.0.0"
   },
   "ember-addon": {
